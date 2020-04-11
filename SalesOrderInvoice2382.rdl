@@ -4,7 +4,7 @@
 
 SELECT 
 
- IH.t_sfcp 'FinancialCompany'
+ IH.t_sfcp 'FinCompany'
 ,IH.t_tran+'/'+CONVERT(VARCHAR,IH.t_idoc) AS Invoice_No
 ,'SOLD TO:' + '$'+ ISNULL(IH.t_ofbp,'*') +'$' + ISNULL((
 	SELECT 
